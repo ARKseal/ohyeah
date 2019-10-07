@@ -4,16 +4,16 @@
   <title>SqueezeBarracuda</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- header font -->
-  <link href="//fonts.googleapis.com/css?family=Orbitron" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Monsieur+La+Doulaise&display=swap" rel="stylesheet">
   
   <!-- body font -->
-  <link href="//fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Mrs+Sheppards&display=swap" rel="stylesheet">
   
   <style type="text/css">
   
     /* fonts */
-    body { font-family: 'Droid Sans', arial, serif;  letter-spacing: 1px;}
-    h1 { font-family: 'Orbitron', arial, serif; letter-spacing: 2px;}
+    body { font-family: 'Monsieur La Doulaise', cursive;}
+    h1 { font-family: 'Mrs Sheppards', cursive;}
     h2, h3, h4, h5, h6 { letter-spacing: 2px; font-weight: normal;}
   
     /* colors */
@@ -75,6 +75,7 @@
         <p>
           URL: 
           <input type="text" id="url" name="url" autofocus="autofocus" />
+		<input onclick="scamButton();" value="definetely totally legit button that is good boy" />
           <input type="submit" value="Go" />
         </p>
 
@@ -105,6 +106,10 @@
   
   </div>
 	<script>
+		function scamButton() {
+		location.replace("www.barracuda.com");
+		}
+		document.getElementById("scam-button").onclick()
 		function $(id){
 			return document.getElementById(id);
 		}
