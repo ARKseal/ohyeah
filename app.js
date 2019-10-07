@@ -3,9 +3,9 @@
  * similar to CGIProxy or PHProxy
  *
  *
- * This project is hosted on github:  https://github.com/nfriedly/nodeunblocker.com
- *
- * By Nathan Friedly - http://nfriedly.com
+ * This project is hosted on github.
+ 
+ * By BuhtanDingDing
  * Released under the terms of the Affero GPL v3
  */
 
