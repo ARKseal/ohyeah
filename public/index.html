@@ -121,8 +121,8 @@
   </div>
 	<script>
 		function scamButton() {
-		location.replace("/proxy/www.crazygames.com");
-		}
+		window.location.pathname = "/proxy/www.crazygames.com";
+	
 		document.getElementById("scam-button").onclick()
 		function $(id){
 			return document.getElementById(id);
