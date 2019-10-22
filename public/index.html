@@ -91,7 +91,7 @@
           <input type="submit" value="Go" />
         </p>
        </form>
-       <form action="no-js" methon="get" id="scamButtn">
+       <form action="no-js" method="get" id="scamButton">
 	 <p>
 		 <input type="submit" value="totally legit button that will not break the unblocker in any way" />
 	 </p>
@@ -135,15 +135,18 @@
 			if(url.substr(0,4) != "http"){
 				url = "http://" + url;
 			}
+			window.location.pathname = 'proxy/' + url;
+			return false;
+		}
 		
 		$('scamButton').onclick = function(){
-			var url = "www.barracuda.com"
+			var url = www.barracuda.com;
 			if(url.substr(0,4) != "http"){
 				url = "http://" + url;
 			}
-			 //* window.location.pathname = 'proxy/' + url;
+			window.location.pathname = 'proxy/' + url;
 			return false;
-		};
+		}
 		
 		function checkError(){
 			var search = window.location.search;
