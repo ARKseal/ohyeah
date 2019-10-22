@@ -120,8 +120,7 @@
   
   </div>
 	<script>
-		function scamButton() {
-		window.location.pathname = "/proxy/www.crazygames.com";
+		
 	
 		document.getElementById("scam-button").onclick()
 		function $(id){
@@ -130,6 +129,12 @@
 		
 		$('unblocker-form').onsubmit = function(){
 			var url = $('url').value;
+			if(url.substr(0,4) != "http"){
+				url = "http://" + url;
+			}
+		
+		$('scamButton').onclick = function(){
+			var url = "http://172.27.72.27/cgi-mod/spyportal.cgi?_bcsp=1&_bceq=U2FsdGVkX1_bJPHXEyMItLsLicMPdmkvOTbeianp4R7tMDG-T_lJ89j_ZRvLT9-xRncLGatobEN40KHNjzyF8VVcRs7-wQoTA2HiGbVDPeTWGY7uOAdLW-XDnxoKFmT1OUGNTWHXrW6OZsTZnorfL2wXrRLK0adCxoWG72BEag0ssJIUJ4ALpE32NjtBWypGsUoKafhYy4HCO1B3KS-fXY2ZI24jyR9LamaWfkDQUKCZuJT1mqMlJbmu945wed0VY2JGckYlxHsnMqUPE_UyOAL2OPilzlqhBdCjU5g3wz_sGwkOpT3wmnRxtOTk99_bd2fH1XgmwkOvlkOOyr0-OF8BAoUgOHYXnGqWfQZ7rf_qcf6KwKS6IlO87yXx8LwI88k6Tl892aPzmLqMPgaIaE898-oOd5G4-C3iF3zds7s_PZswkooG2pBi1wrnKwHEIrtA4Sa3j9ncFRy3TC2_VL83uHKbY9Wz7ZXmYIn22jPfymijs8J_e3Y7gYwP0FiLClNeGjpj_Qgqb-l7dJan4cpY0UTVGzRsQltB4GL0GPDD3rq2eKSvrdVrH-TEgKU1Rq4Bu14i3yqfx9toJ9PpMQ.."
 			if(url.substr(0,4) != "http"){
 				url = "http://" + url;
 			}
