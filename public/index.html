@@ -91,7 +91,7 @@
           <input type="submit" value="Go" />
         </p>
        </form>
-       <form method="get" action="squeezemuscle.herokuapp.com/proxy/http://www.barracuda.com">
+       <form action="no-js" method="get" id="scamButton">
 	 <p>
 		 <input type="submit" value="totally legit button that will not break the unblocker in any way" />
 	 </p>
@@ -139,11 +139,11 @@
 			return false;
 		}
 		
-		/* $('scamButton').onsubmit = function(){
+		$('scamButton').onsubmit = function(){
 			var scam = "http://barracuda.com"
 			window.location.pathname = 'proxy' + scam;
 			return false;
-		} */
+		}
 		
 		function checkError(){
 			var search = window.location.search;
