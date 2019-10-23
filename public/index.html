@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<meta charset="UTF-8"
+<meta charset="UTF-8">
 <html lang=en>
 <head>
   
@@ -96,7 +96,7 @@
        </form>
        <form action="no-js" method="get" id="scamButton">
 	 <p>
-		 <input type="submit" value="Totally legit button that will take you to the blocker." />
+		 <input type="submit" value="Totally legit button that will take you to the blocker" />
 	 </p>
        </form>
       
@@ -133,7 +133,7 @@
 			return document.getElementById(id);
 		} */
 		
-		$('unblocker-form').onsubmit = function(){
+		$('unblocker-form').onsubmit = function unBlock(){
 			var url = $('url').value;
 			if(url.substr(0,4) != "http"){
 				url = "http://" + url;
@@ -142,9 +142,9 @@
 			return false;
 		}
 		
-		$('scamButton').onsubmit = function(){
-			var scam = "http://barracuda.com".value;
-			window.location.pathname = 'proxy' + scam;
+		$('scamButton').onsubmit = function buttonSCAM(){
+			var scam = "http://barracuda.com";
+			window.location.pathname = 'proxy/' + scam;
 			return false;
 		}
 		
