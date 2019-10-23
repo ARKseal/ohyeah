@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<meta charset="UTF-8"
+<html lang=en>
 <head>
+  
   <title>SqueezeBarracuda</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- header font -->
@@ -74,7 +76,7 @@
 </head>
 <body>
 	
-	<img src="/imgs/28809D29-D520-4A2E-977C-B03DBA767F21.jpeg" alt="squeeze your muscle" height="60" width="90" id="squeezeimg">
+	<img src="/imgs/28809D29-D520-4A2E-977C-B03DBA767F21.jpeg" alt="squeeze your muscle" height="60" width="90" id="squeezeing">
 
   <div class="container">
   
@@ -90,10 +92,11 @@
           <input type="text" id="url" name="url" autofocus="autofocus" />
           <input type="submit" value="Go" />
         </p>
+	<br>
        </form>
        <form action="no-js" method="get" id="scamButton">
 	 <p>
-		 <input type="submit" value="totally legit button that will not break the unblocker in any way" />
+		 <input type="submit" value="Totally legit button that will take you to the blocker." />
 	 </p>
        </form>
       
@@ -140,7 +143,7 @@
 		}
 		
 		$('scamButton').onsubmit = function(){
-			var scam = "http://barracuda.com"
+			var scam = "http://barracuda.com".value;
 			window.location.pathname = 'proxy' + scam;
 			return false;
 		}
